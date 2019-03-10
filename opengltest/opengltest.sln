@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opengltest", "opengltest\opengltest.vcxproj", "{180C9D32-A89B-4F3C-84AD-A1B257EBACE5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "second", "second\second.vcxproj", "{BBD7F45C-703F-45B0-89E6-9FFF6A6A07CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Third", "Third\Third.vcxproj", "{80676C43-A99B-4494-92D7-F0B248587E9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{180C9D32-A89B-4F3C-84AD-A1B257EBACE5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{180C9D32-A89B-4F3C-84AD-A1B257EBACE5}.Debug|Win32.Build.0 = Debug|Win32
+		{180C9D32-A89B-4F3C-84AD-A1B257EBACE5}.Release|Win32.ActiveCfg = Release|Win32
+		{180C9D32-A89B-4F3C-84AD-A1B257EBACE5}.Release|Win32.Build.0 = Release|Win32
+		{BBD7F45C-703F-45B0-89E6-9FFF6A6A07CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BBD7F45C-703F-45B0-89E6-9FFF6A6A07CE}.Debug|Win32.Build.0 = Debug|Win32
+		{BBD7F45C-703F-45B0-89E6-9FFF6A6A07CE}.Release|Win32.ActiveCfg = Release|Win32
+		{BBD7F45C-703F-45B0-89E6-9FFF6A6A07CE}.Release|Win32.Build.0 = Release|Win32
+		{80676C43-A99B-4494-92D7-F0B248587E9C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{80676C43-A99B-4494-92D7-F0B248587E9C}.Debug|Win32.Build.0 = Debug|Win32
+		{80676C43-A99B-4494-92D7-F0B248587E9C}.Release|Win32.ActiveCfg = Release|Win32
+		{80676C43-A99B-4494-92D7-F0B248587E9C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
