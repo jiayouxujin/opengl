@@ -1,9 +1,9 @@
 #include <gl/glut.h>
- 
+#include <cstdio>
 int iPointNum = 0;                     //已确定点的数目
 int x1=0,x2=0,y1=0,y2=0;               //确定的点坐标
 int winWidth = 400, winHeight = 300;     //窗口的宽度和高度
- 
+int Value=1;
 void Initial(void)
 {
        glClearColor(1.0f, 1.0f, 1.0f, 1.0f);        
@@ -17,16 +17,22 @@ void ChangeSize(int w, int h)
        glLoadIdentity();
        gluOrtho2D(0.0,winWidth,0.0,winHeight);
 }
- 
+void mymenu(int value){
+ Value=value;
+  glutPostRedisplay();                   //交换缓冲区
+}
 void Display(void)
 {
        glClear(GL_COLOR_BUFFER_BIT);
        glColor3f(1.0f, 0.0f, 0.0f);
-       if(iPointNum >= 1)       {
+       if(iPointNum >= 1&&Value==1)       {
               glBegin(GL_LINES);              //绘制直线段
                      glVertex2i(x1,y1);
                      glVertex2i(x2,y2);
               glEnd();
+       }
+	   if(iPointNum >= 1&&Value==2)       {
+             glRecti(x1,y1,x2,y2);
        }
        glutSwapBuffers();                    //交换缓冲区
 }
@@ -67,7 +73,11 @@ int main(int argc, char* argv[])
        glutInitWindowPosition(100,100);
        glutCreateWindow("实验内容2 橡皮筋技术");
        glutDisplayFunc(Display);
-       glutReshapeFunc(ChangeSize);                //指定窗口在整形回调函数
+       glutReshapeFunc(ChangeSize);                //指定窗口在整形回调函数  
+	   glutCreateMenu(mymenu);//注册菜单回调函数
+	   glutAddMenuEntry("直线",1);//添加菜单项
+	   glutAddMenuEntry("矩形",2);
+	   glutAttachMenu(GLUT_RIGHT_BUTTON);//把当前菜单注册到指定的鼠标键
        glutMouseFunc(MousePlot);                  //指定鼠标响应函数
        glutPassiveMotionFunc(PassiveMouseMove);    //指定鼠标移动响应函数
        Initial();                                   

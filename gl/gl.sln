@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl", "gl\gl.vcxproj", "{46449E0F-95F4-417F-BF5C-4272743EF6A2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "think", "think\think.vcxproj", "{53055B05-8FAD-4019-A160-A8C4E464149E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "third", "third\third.vcxproj", "{4A474E0E-D024-4A6F-88B4-A485F16CCE2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46449E0F-95F4-417F-BF5C-4272743EF6A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{46449E0F-95F4-417F-BF5C-4272743EF6A2}.Debug|Win32.Build.0 = Debug|Win32
+		{46449E0F-95F4-417F-BF5C-4272743EF6A2}.Release|Win32.ActiveCfg = Release|Win32
+		{46449E0F-95F4-417F-BF5C-4272743EF6A2}.Release|Win32.Build.0 = Release|Win32
+		{53055B05-8FAD-4019-A160-A8C4E464149E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{53055B05-8FAD-4019-A160-A8C4E464149E}.Debug|Win32.Build.0 = Debug|Win32
+		{53055B05-8FAD-4019-A160-A8C4E464149E}.Release|Win32.ActiveCfg = Release|Win32
+		{53055B05-8FAD-4019-A160-A8C4E464149E}.Release|Win32.Build.0 = Release|Win32
+		{4A474E0E-D024-4A6F-88B4-A485F16CCE2E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4A474E0E-D024-4A6F-88B4-A485F16CCE2E}.Debug|Win32.Build.0 = Debug|Win32
+		{4A474E0E-D024-4A6F-88B4-A485F16CCE2E}.Release|Win32.ActiveCfg = Release|Win32
+		{4A474E0E-D024-4A6F-88B4-A485F16CCE2E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
